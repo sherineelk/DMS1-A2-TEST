@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+My first website.
+</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+<body style="background-color: rgb(233, 159, 183);">
+    <!--
+<h1 style="color: rgb(39, 9, 45);" style="font-family: 'Times New Roman', Times, serif">
+This is the main heading! hu hu huu!
+</h1>
+<h2>
+this a government mandated test
+</h2>
+<p> dont need to worry <br> ha ha </b></p>
+<img src="img/random image placeholder.jpeg" width="700" height="400"> 
+-->
+<img id="donut1" src="img/donut_01.png" width="200" height="200"> 
+<img id="donut2"  src="img/donut_02.png" width="200" height="200"> 
+<img id="dount3" src="img/donut_03.png" width="200" height="200"> 
+<script>
+    var sound1 = new buzz.sound("sound/glitch1.mp3");
+    var sound2 = new buzz.sound("sound/glitch2.mp3");
+    var sound3 = new buzz.sound("sound/glitch3.mp3");
+    
+    window.onload = function() {
+        document.getElementById('donut1').addEventListener('click', function () {sound1.play(); });  
+        document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+        document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+    };
+</script>  
+
+</body>
+</html>
